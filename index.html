@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Train Schedule</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <style>
+        .jumbotron {
+            background-color: #B22222;
+            text-align: center;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            height: 150px;
+        }
+        .lead {
+            font-size: 25px;
+            
+            
+        }
+        #container {
+            padding: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+        <div class="jumbotron">
+                    
+                <p class="lead">Train Schedule</p>
+                
+              </div>
+    <div id="container">
+            
+                  <table class="table">
+                      <thead><strong>CURRENT TRAIN SCHEDULE</strong></thead>
+                        <thead>
+                          <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                            <td>test</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+
+                      <form> </br></br>
+                            <hr>
+                              <h5><strong>Add Train</strong></h5></br>
+                              <div class="form-group">
+                                <label for="NameInput">Train Name</label>
+                                <input type="text" class="form-control" id="inputTrainName" aria-describedby="emailHelp" placeholder="Enter Train Name">
+                                
+                              </div>
+                              <div class="form-group">
+                                <label for="DestinationInput">Destination</label>
+                                <input type="text" class="form-control" id="inputDestination" placeholder="Destination">
+                              </div>
+                              <div class="form-group">
+                                      <label for="firstTrainTimeInput">First Train Time (HH:mm military time)
+                                      </label>
+                                      <input type="text" class="form-control" id="inputFirstTrainTime" aria-describedby="emailHelp" placeholder="00:00">
+                                      
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="FrequencyInput">Frequency (min)</label>
+                                      <input type="text" class="form-control" id="inputFrequency" placeholder="00">
+                                    </div>
+                              <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+                            </form>
+    </div>
+    <script src="trainSchedule.js"></script>
+</body>
+</html>
